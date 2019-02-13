@@ -109,6 +109,23 @@ public class TestPerson {
     }
 
     @Test
+    public void testSetAddress() {
+        // Given
+        Person person = new Person();
+        String expected = "Chadds Ford";
+
+        // When
+        person.setName(expected);
+
+        // Then
+        String actual = person.getAddress();
+        Assert.assertEquals(expected, actual);
+    }
+
+
+
+
+    @Test
     public void testSetAge() {
         // Given
         Person person = new Person();

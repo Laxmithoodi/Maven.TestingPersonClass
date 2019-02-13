@@ -7,6 +7,7 @@ public class Person {
     private String name;
     private int age;
     private String gender;
+    private String address;
 
 //Default constructor
 
@@ -16,6 +17,7 @@ public class Person {
         age = 5;
     }
 
+    //Constructor
 
     public Person(int age) {
          this.age = age;
@@ -24,6 +26,7 @@ public class Person {
     public Person(String name) {
         this.name = name;
         this.gender = name;
+        this.address = name;
 
     }
 
@@ -38,6 +41,7 @@ public class Person {
 
         this.name = name;
         this.gender = name;
+        this.address = name;
     }
 
 
@@ -62,5 +66,9 @@ public class Person {
     public Integer getAge() {
 
         return age;
+    }
+
+    public String getAddress(){
+        return address;
     }
 }
